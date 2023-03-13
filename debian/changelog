@@ -1,0 +1,5 @@
+golang-github-package-url-packageurl-go (0.1.0-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: TODO)
+
+ -- Andrew Pollock <apollock@google.com>  Mon, 13 Mar 2023 14:40:55 +1100

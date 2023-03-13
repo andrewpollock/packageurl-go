@@ -1,0 +1,32 @@
+Source: golang-github-package-url-packageurl-go
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Andrew Pollock <apollock@google.com>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-package-url-packageurl-go
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-package-url-packageurl-go.git
+Homepage: https://github.com/package-url/packageurl-go
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/package-url/packageurl-go
+
+Package: golang-github-package-url-packageurl-go-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Go implementation of the package url spec (library)
+ When tools, APIs and databases process or store multiple package types, it is
+ difficult to reference the same software package across tools in a uniform way.
+ .
+ A purl or package URL is an attempt to standardize existing approaches to
+ reliably identify and locate software packages.
+ .
+ purl is a URL string used to identify and locate a software package in a mostly
+ universal and uniform way across programing languages, package managers,
+ packaging conventions, tools, APIs and databases.
+ .
+ This package contains Go bindings for purl.
